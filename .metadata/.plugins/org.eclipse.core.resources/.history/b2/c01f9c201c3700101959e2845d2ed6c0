@@ -1,0 +1,5 @@
+ackage tests;
+
+public @interface Test {
+
+}

@@ -1,0 +1,41 @@
+package aplicacion;
+
+import clases.Funciones;
+
+public class Principal {
+	public static void main(String[] args) {
+		int[] numeros1 = new int[10];
+		int[] numeros2 = new int[10];
+
+		// un array con 10 numeros aleatorios entre 0 y 10
+		numeros1[0] = 3;
+		numeros1[1] = 7;
+		numeros1[2] = 1;
+		numeros1[3] = 9;
+		numeros1[4] = 2;
+		numeros1[5] = 5;
+		numeros1[6] = 0;
+		numeros1[7] = 10;
+		numeros1[8] = 4;
+		numeros1[9] = 6;
+
+		// un array con 10 numeros aleatorios entre -10 y 0
+		numeros2[0] = -3;
+		numeros2[1] = -7;
+		numeros2[2] = -1;
+		numeros2[3] = 0;
+		numeros2[4] = -2;
+		numeros2[5] = -5;
+		numeros2[6] = -10;
+		numeros2[7] = -4;
+		numeros2[8] = -9;
+		numeros2[9] = -6;
+
+		int max1 = Funciones.maximoArray(numeros1);
+		int min1 = Funciones.minimoArray(numeros1);
+
+		int max2 = Funciones.maximoArray(numeros2);
+		int min2 = Funciones.minimoArray(numeros1);
+
+	}
+}

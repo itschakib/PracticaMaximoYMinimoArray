@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module PracticaMaximoYMinimoArray {
+	requires org.junit.jupiter.api;
+
+
+}

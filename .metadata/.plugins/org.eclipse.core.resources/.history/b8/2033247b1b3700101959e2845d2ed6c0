@@ -1,0 +1,31 @@
+package tests;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+import clases.Funciones;
+
+public class TestMaximo {
+
+    @Test
+    public void testPositivos() {
+        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        assertEquals(9, Funciones.maximoArray(arr));
+    }
+
+    @Test
+    public void testNegativos() {
+        int[] arr = {-1, -2, -3, -4, -5, -6, -7, -8, -9, 0};
+        assertEquals(0, Funciones.maximoArray(arr));
+    }
+
+    @Test
+    public void testMixto() {
+        int[] arr = {-5, 0, 5};
+        assertEquals(5, Funciones.maximoArray(arr));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testArrayVacio() {
+        Funciones.maximoArray(new int[0]);
+    }
+}
